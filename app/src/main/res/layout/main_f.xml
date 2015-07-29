@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".ActivityMainFragment"
+    android:background="#888888">
+
+    <FrameLayout
+        android:layout_width="@dimen/key_width"
+        android:layout_height="@dimen/key_height"
+        android:background="@drawable/key"
+        android:id="@+id/btnC"
+        android:paddingTop="@dimen/key_padding_top"
+        android:layout_alignTop="@+id/btnD"
+        android:layout_toStartOf="@+id/btnD" />
+
+    <FrameLayout
+        android:layout_width="@dimen/key_width"
+        android:layout_height="@dimen/key_height"
+        android:background="@drawable/key"
+        android:id="@+id/btnD"
+        android:paddingTop="@dimen/key_padding_top"
+        android:layout_alignTop="@+id/btnE"
+        android:layout_toStartOf="@+id/btnE" />
+
+    <FrameLayout
+        android:layout_width="@dimen/key_width"
+        android:layout_height="@dimen/key_height"
+        android:background="@drawable/key"
+        android:id="@+id/btnE"
+        android:paddingTop="@dimen/key_padding_top"
+        android:layout_alignTop="@+id/btnF"
+        android:layout_toStartOf="@+id/btnF" />
+
+    <FrameLayout
+        android:layout_width="@dimen/key_width"
+        android:layout_height="@dimen/key_height"
+        android:background="@drawable/key"
+        android:id="@+id/btnF"
+        android:paddingTop="@dimen/key_padding_top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"/>
+
+    <FrameLayout
+        android:layout_width="@dimen/key_width"
+        android:layout_height="@dimen/key_height"
+        android:background="@drawable/key"
+        android:id="@+id/btnG"
+        android:paddingTop="@dimen/key_padding_top"
+        android:layout_alignTop="@+id/btnF"
+        android:layout_toEndOf="@+id/btnF" />
+
+    <FrameLayout
+        android:layout_width="@dimen/key_width"
+        android:layout_height="@dimen/key_height"
+        android:background="@drawable/key"
+        android:id="@+id/btnA"
+        android:paddingTop="@dimen/key_padding_top"
+        android:layout_alignTop="@+id/btnG"
+        android:layout_toEndOf="@+id/btnG" />
+
+    <FrameLayout
+        android:layout_width="@dimen/key_width"
+        android:layout_height="@dimen/key_height"
+        android:background="@drawable/key"
+        android:id="@+id/btnB"
+        android:paddingTop="@dimen/key_padding_top"
+        android:layout_alignTop="@+id/btnA"
+        android:layout_toEndOf="@+id/btnA" />
+
+    <!-- 黒鍵 -->
+
+    <FrameLayout
+        android:layout_width="@dimen/black_key_width"
+        android:layout_height="@dimen/black_key_height"
+        android:background="@drawable/key_black"
+        android:id="@+id/btnCs"
+        android:layout_alignTop="@+id/btnFs"
+        android:layout_toEndOf="@+id/btnC"
+        android:layout_marginStart="-16dp"/>
+
+    <FrameLayout
+        android:layout_width="@dimen/black_key_width"
+        android:layout_height="@dimen/black_key_height"
+        android:background="@drawable/key_black"
+        android:id="@+id/btnDs"
+        android:layout_alignTop="@+id/btnFs"
+        android:layout_toEndOf="@+id/btnD"
+        android:layout_marginStart="-16dp"/>
+
+    <FrameLayout
+        android:layout_width="@dimen/black_key_width"
+        android:layout_height="@dimen/black_key_height"
+        android:background="@drawable/key_black"
+        android:id="@+id/btnFs"
+        android:layout_alignTop="@+id/btnF"
+        android:layout_toEndOf="@+id/btnF"
+        android:layout_marginStart="-16dp"/>
+
+    <FrameLayout
+        android:layout_width="@dimen/black_key_width"
+        android:layout_height="@dimen/black_key_height"
+        android:background="@drawable/key_black"
+        android:id="@+id/btnGs"
+        android:layout_alignTop="@+id/btnFs"
+        android:layout_toEndOf="@+id/btnG"
+        android:layout_marginStart="-16dp"/>
+
+    <FrameLayout
+        android:layout_width="@dimen/black_key_width"
+        android:layout_height="@dimen/black_key_height"
+        android:background="@drawable/key_black"
+        android:id="@+id/btnAs"
+        android:layout_alignTop="@+id/btnFs"
+        android:layout_toEndOf="@+id/btnA"
+        android:layout_marginStart="-16dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scan"
+        android:id="@+id/scan_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/btnD" />
+
+</RelativeLayout>
